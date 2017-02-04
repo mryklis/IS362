@@ -68,7 +68,7 @@ GROUP BY planes.manufacturer;
 -- 'MCDONNELL DOUGLAS CORPORATION', '4767'
 
 -- Write and answer at least one question of your own choosing that joins information from at least three of the tables in the flights database.
--- select flights flown by Boeing in 2013 from Newark where visibility was less than 10
+-- select flights flown by Boeing in 2013 from Newark where visibility is 10
 SELECT COUNT(*)
 FROM flights.flights AS fl
 LEFT JOIN flights.planes AS pl ON pl.tailnum = fl.tailnum
